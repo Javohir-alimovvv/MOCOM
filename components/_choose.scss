@@ -1,0 +1,94 @@
+.choose {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .choose_top_box {
+        width: 23px;
+        height: 79px;
+        border-radius: 10px;
+        background: $main-h;
+        margin-bottom: 80px;
+    }
+
+    .choose_text {
+        font-family: 'regular400';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.78px;
+        text-align: center;
+        color: $main-col;
+        margin-bottom: 100px;
+    }
+
+    .choose_grid_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        justify-content: center;
+
+        .choose_grid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+            .icons_choose {
+                font-size: 28px;
+                color: $main-h;
+            }
+
+            .choose_fast {
+                font-family: 'lilazer400';
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 60px;
+                text-align: center;
+                color: $main-col;
+            }
+
+            .choose_lorem {
+                max-width: 320px;
+                font-family: 'regular400';
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21.78px;
+                text-align: center;
+                color: $main-col;
+            }
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .choose{
+        margin-top: 80px;
+        .choose_grid_box{
+            gap: 0px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .choose{
+        .choose_grid_box{
+            grid-template-columns: 1fr;
+            .choose_grid{
+                .choose_fast{
+                    font-size: 28px;
+                }
+                .choose_lorem{
+                    max-width: 280px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

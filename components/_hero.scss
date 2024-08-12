@@ -1,0 +1,162 @@
+.hero {
+    width: 100%;
+    height: auto;
+    padding: 160px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hero_left_top_text {
+        max-width: 640px;
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        color: $main-h;
+        font-family: "lilazer400";
+
+        .Mobile {
+            color: $main-col;
+            max-width: 640px;
+            font-size: 90px;
+            font-weight: 400;
+            line-height: 1;
+            text-align: left;
+            font-family: "lilazer400";
+        }
+
+
+    }
+
+    .hero_btn {
+        width: 183px;
+        height: 60px;
+        border-radius: 20px;
+        background: $main-h;
+        font-family: "lilazer400";
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        color: #FFFFFF;
+        border: 3px solid transparent;
+        margin-top: 50px;
+
+        &:hover {
+            background: white;
+            color: $main-h;
+            border-color: $main-h;
+        }
+    }
+    .hero_right_gr{
+        max-width: 518px;
+        height: auto;
+        .hero_right_gr_img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+.hero_bottom {
+    max-width: 1260px;
+    overflow: auto;
+    padding: 0px 50px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 150px;
+
+    .hero_bottom_cards {
+        width: 323px;
+        min-width: 323px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .card_img_box {
+            width: 323px;
+            height: 421px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $bg-py;
+            position: relative;
+            cursor: pointer;
+
+            .card_img {
+                width: 95%;
+                height: auto;
+            }
+
+            .sale {
+                position: absolute;
+                top: 16px;
+                left: 17px;
+                padding: 4px 8px;
+                background: #D9D9D9;
+                box-shadow: 0px 4px 4px 0px #00000040;
+                border-radius: 20px;
+                font-family: "regular400";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.94px;
+                text-align: center;
+                color: $main-col;
+                display: none;
+            }
+
+            &:hover .sale {
+                display: block;
+            }
+        }
+
+        .card_bottom_text {
+            font-family: "regular400";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.94px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: $main-col;
+            max-width: 210px;
+        }
+    }
+}
+
+
+
+@media (max-width: 1050px) {
+    .hero{
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero{
+        .hero_left_gr{
+            .hero_left_top_text{
+                font-size: 60px;
+                .Mobile{
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+    .hero_bottom{
+        padding: 0px;
+        gap: 20px;
+        .hero_bottom_cards{
+            min-width: 280px;
+            width: 280px;
+            .card_img_box{
+                width: 280px;
+                height: 390px;
+            }
+        }
+    }
+}

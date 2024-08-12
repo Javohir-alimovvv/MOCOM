@@ -1,0 +1,159 @@
+.about_home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .about_home_top_box {
+        width: 23px;
+        height: 79px;
+        border-radius: 10px;
+        background: $main-h;
+        margin-bottom: 80px;
+    }
+
+    .home_cen_text {
+        max-width: 908px;
+        font-family: "lilazer400";
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: center;
+        color: $main-h;
+        margin-bottom: 68px;
+    }
+
+    .home_bottom_text {
+        max-width: 1254px;
+        font-family: "regular400";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.36px;
+        text-align: left;
+        color: $main-col;
+        margin-bottom: 80px;
+    }
+
+    .home_img_center {
+        width: 100%;
+        height: auto;
+        margin-bottom: 200px;
+    }
+
+    .about_home_bottom_gr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+        margin-bottom: 140px;
+
+        .home_bottom_box {
+            display: flex;
+            align-items: center;
+            max-width: 1135px;
+            height: 452px;
+            border-radius: 20px;
+            background: $bg-py;
+            padding: 20px 30px;
+            position: absolute;
+            z-index: 5;
+            left: 0;
+
+            .home_shoip_primum {
+                max-width: 633px;
+                font-family: "lilazer400";
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 60px;
+                text-align: left;
+                color: $main-h;
+                margin-bottom: 19px;
+            }
+
+            .home_lorem {
+                max-width: 640px;
+                font-family: "regular400";
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19.36px;
+                text-align: left;
+                color: $main-col;
+                margin-bottom: 19px;
+            }
+
+            .home_btn {
+                width: 251px;
+                height: 60px;
+                background: $main-h;
+                border-radius: 20px;
+                font-family: "lilazer400";
+                font-size: 20px;
+                font-weight: 400;
+                text-align: center;
+                color: #FFFFFF;
+                color: 3px solid transparent;
+
+                &:hover {
+                    background: white;
+                    color: $main-h;
+                    border-color: $main-h;
+                }
+            }
+
+            .box_img_box {
+                max-width: 320px;
+                height: auto;
+
+                .image_box {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .about_home_bottom_gr_box {
+            width: 532px;
+            height: 532px;
+            background: #003049;
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .about_home {
+        .home_bottom_text {
+            text-align: center;
+        }
+
+        .about_home_bottom_gr {
+            .home_bottom_box {
+                flex-direction: column-reverse;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about_home {
+        .home_bottom_box {
+            .home_shoip_primum {
+                font-size: 17px;
+                line-height: .5;
+            }
+        }
+
+        .about_home_bottom_gr {
+            height: 700px;
+        }
+
+        .about_home_bottom_gr_box {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "regular400";
+    src: url("../fonts/Inter_28pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lilazer400";
+    src: url("../fonts/Lalezar-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1292px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+
+li {
+    list-style-type: none;
+    font-family: "regular400";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+    transition: .2s;
+    border: transparent;
+}
